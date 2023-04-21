@@ -5,6 +5,7 @@ import { useState } from 'react'
 import axios from 'axios'
 import Sucess from '../success/Sucess'
 import Error from '../error/Error'
+import logo from "../../images/MD-Logo.png"
 
 const Register = () => {
   const navigate = useNavigate()
@@ -61,8 +62,9 @@ const Register = () => {
         <div className="login_content">
           <div className="left_login_content" style={{ backgroundImage: "url('https://images.pexels.com/photos/6156517/pexels-photo-6156517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')", }}></div>
           <div className="right_login_content">
+            <span><img src={logo} alt="" /></span>
             <h2>Register Form</h2>
-            <form onSubmit={handlesubmit}>
+            <form className="login-form" onSubmit={handlesubmit}>
               <input type="text" placeholder="Name" name="name" value={data.name} onChange={handleChange} id="name" maxLength={60} required />
               <input type="text" placeholder="Username / Email" name="email" value={data.email} onChange={handleChange} id="Username" required maxLength={60} />
               <input type="password" placeholder="Password" name="password" value={data.password} onChange={handleChange} id="Password" required maxLength={8} />

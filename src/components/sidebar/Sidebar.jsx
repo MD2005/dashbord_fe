@@ -11,6 +11,7 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 import { Link } from "react-router-dom";
 import { DarkModeContext } from "../../context/darkModeContext";
 import { useContext } from "react";
+import logo from "../../images/MD-Logo.png"
 
 
 const Sidebar = () => {
@@ -19,7 +20,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="top">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <span className="logo">Dashboard</span>
+          <span className="logo_span"><img src={logo} alt="" /></span>
         </Link>
       </div>
       <hr />
