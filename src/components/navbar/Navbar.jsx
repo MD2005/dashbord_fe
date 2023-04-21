@@ -27,7 +27,10 @@ function handleClick(){
 </div>
           <div className="item">
           <button className="nav_login_button"  onClick={handleClick}>logout</button>
-        <span className="nav__profile_txt">{user.user.name}</span>
+        <span className="nav__profile_txt">
+          M
+        </span>
+        {/* <span className="nav__profile_txt">{user.user.name}</span> */}
           </div>
         </div>
       </div>
