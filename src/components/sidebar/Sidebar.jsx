@@ -27,7 +27,7 @@ const Sidebar = () => {
         <ul>
           <p className="title">MAIN</p>
           <li>
-            <Link to={"/"} style={{ textDecoration: "none" }}><DashboardIcon className="icon" />
+            <Link to={"/home"} style={{ textDecoration: "none" }}><DashboardIcon className="icon" />
             <span>Dashboard</span></Link>
           </li>
           <p className="title">LISTS</p>
